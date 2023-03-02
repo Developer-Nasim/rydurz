@@ -146,11 +146,10 @@ li {
     z-index: -1;
     border-radius: 30px;
     background: linear-gradient(87.91deg, #FFE599 7.59%, #FFBF5F 89.47%);
-    transition: .3s;
-    opacity: 0;
+    transition: .3s; 
 }
 .thm_btn:hover:after{
-    opacity: 1;
+    opacity: 0;
 }
 /* default-css END 
 ================================== */
@@ -182,7 +181,9 @@ a.link span {
     line-height: 1;
     margin-bottom: -22px;
 }
-
+mobile-menu .footer_social {
+    text-align: center;
+}
 a.link:before {
     content: "";
     position: absolute;
@@ -299,9 +300,12 @@ a.SUPPORT_btn i {
     max-width: 130px;
     display: block;
     margin-top: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
-
+.mobile-menu .footer_social {
+    text-align: center;
+    margin-bottom: 20px;
+}
 .mobile-menu a.bars {
   position: absolute;
   right: 20px;
@@ -698,7 +702,10 @@ section.offer-Area .container {
     transform: translateX(-50%);
     font-size: 14px;
 }
-
+.offer_card_blk i a.info {
+    display: block;
+    height: max-content;
+}
 a.info {
     z-index: 99;
     right: 10px;
