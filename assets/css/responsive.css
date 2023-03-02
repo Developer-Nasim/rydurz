@@ -293,7 +293,10 @@
         width: max-content;
     }
     .register_wrp i img {
-        max-width: 336px;
+        max-width: 80%;
+        display: block;
+        margin: auto;
+        margin-bottom: -20px;
     }
     
     .dice_icon-1 {
@@ -306,8 +309,8 @@
     }
     
     .register_text {
-        margin-left: 35px;
-        padding: 0 0 30px;
+        margin-left: 25px;
+        padding: 0 0 25px;
     }
     
     
@@ -373,17 +376,34 @@ a.Logo img {
 .register_wrp > i {
     margin-left: auto;
 }
-
-.active .offer_card_text {display: none;}
-
+.offer_card_text {
+    max-width: 150px; 
+    padding-right: 40px;
+    transform: translate(20px, 18px);
+}
+.offer_text_row { 
+    margin-bottom: 40px;
+}
+.offer_card_text p {
+    font-size: 8px; 
+    letter-spacing: 0; 
+}
+.active span.corner_left {
+    left: auto;
+    right: 74%;
+    bottom: -7px;
+}
 .offer_card_blk.active:before {
-    width: 93%;
+    width: 102%;
 }
 
 .offer_coin {
     display: none;
 }
-
+.offer_card_text h2 {
+    font-size: 22px; 
+    margin-bottom: 20px;
+}
 img.Roulette {
     width: 199px;
     bottom: -90px;
@@ -418,7 +438,8 @@ footer.footer_area {
 }
 
 .register_text p {
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .DISCOVER-OFFERS {
     margin-top: 100px;
@@ -511,6 +532,40 @@ i.cs_blk_three {
 
     .footer_social {
         display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .offer_card_blk i > img {
+        height: 260px;
+    }
+    .offer_card_blk.active:before {
+        right: 6px; 
+    }
+    .offer_card_blk i a.thm_btn {
+        height: 30px;
+        width: 130px;
+        bottom: 15px;
+        font-size: 13px;
+    }
+    
+    .offer_card_blk:after {
+        height: 260px;
+    }
+    
+    .border_path::before {
+        height: 263px;
+        width: 94%;
+        right: 5px;
+        border-radius: 15px;
     }
 }
  

@@ -37,16 +37,13 @@ function offerCardFunc() {
   const mediaQueryTwo = window.matchMedia('(max-width: 767px)')
   const clActive = document.querySelectorAll('.offer_card_blk')
   if (clActive.length > 0) {
-    
-    if (mediaQueryTwo.matches) {
+     
         clActive.forEach(clActives => {
             clActives.classList.remove('active')
-        })
-    }
+        }) 
     
-    
-    if (mediaQuery.matches) {
-        var btn = document.querySelectorAll('.info')
+     
+          var btn = document.querySelectorAll('.info')
             var item = document.querySelectorAll('.offer_card_texts')
     
             btn.forEach(btns => {
@@ -60,8 +57,7 @@ function offerCardFunc() {
                 btn.forEach(btns => {
                     btns.parentElement.parentElement.classList.remove('active')
                 })
-            }
-    }
+            } 
   }
  
 }
