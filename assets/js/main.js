@@ -49,8 +49,8 @@ function offerCardFunc() {
             btn.forEach(btns => {
                 btns.addEventListener('click', (e) => {
                     e.preventDefault()
-                    oldremove()
-                    btns.parentElement.parentElement.classList.add('active')
+                    // oldremove()
+                    btns.parentElement.parentElement.classList.toggle('active')
                 })
             })
             function oldremove() {

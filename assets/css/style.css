@@ -148,8 +148,8 @@ li {
     background: linear-gradient(87.91deg, #FFE599 7.59%, #FFBF5F 89.47%);
     transition: .3s; 
 }
-.thm_btn:hover:after{
-    opacity: 0;
+.thm_btn:hover:after { 
+    background: linear-gradient(87.91deg, #FFE599 -14.41%, #e6a84a 89.47%);
 }
 /* default-css END 
 ================================== */
@@ -304,6 +304,7 @@ a.SUPPORT_btn i {
 }
 .mobile-menu .footer_social {
     text-align: center;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 .mobile-menu a.bars {
@@ -724,7 +725,31 @@ a.info {
 
 .active .offer_card_text {
     display: block;
+     
+    -webkit-animation: slide-down 1.3s ease-out;
+    -moz-animation: slide-down 2.3s ease-out;
 }
+@-webkit-keyframes slide-down {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes slide-down {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
 
 .offer_card_text h2 {
     font-size: 48px;
